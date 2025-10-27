@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.MuiTableCell-head {
+  font-weight: 600 !important;
+  color: #555555 !important;
+}
+
+button {
+  text-transform: capitalize !important;
+  border-radius: 2px !important;
+}
+button.MuiToggleButton-root,
+.MuiTableCell-root {
+  color: #555555 !important;
+}
+button.MuiToggleButton-root.Mui-selected {
+  color: #3b82f6 !important;
+  border: 1px solid #3b82f6 !important;
+  background-color: white !important;
+}
+.ml-customize {
+  margin-left: 120px;
+}
+
+.MuiPaginationItem-root {
+  border: 1px solid #e5e4e2 !important;
+  color: #555555 !important;
+}
+
+.MuiPaginationItem-root.Mui-selected {
+  background-color: transparent !important;
+  border: 1px solid #3b82f6 !important;
+  color: #3b82f6 !important;
+}
+
+.required {
+  color: red;
+  margin-right: 5px;
+}
+
+.userdialog-textfield .MuiOutlinedInput-input {
+  padding: 10px 14px !important;
+}
+
+.primaryButton {
+  background-color: #3b82f6 !important;
+  color: white !important;
+}
+
+.secondaryButton {
+  border-color: #d1d5db !important;
+  color: #555555 !important;
+}
