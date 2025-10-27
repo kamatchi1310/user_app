@@ -44,16 +44,17 @@ const UserList = () => {
 
   const handleUser = (data: any) => {
     dispatch(UserReducerThunks.createUser({ userData: data }));
+    setSelectedUser(undefined);
   };
 
   const updateUser = (values: UserListTypes) => {
-    console.log(values);
     dispatch(
       UserReducerThunks.updateUser({
         id: selectedUser?.id || 0,
         userData: values,
       })
     );
+    setSelectedUser(undefined);
   };
   const handleConfirmDelete = () => {
     setOpenDelete(false);
